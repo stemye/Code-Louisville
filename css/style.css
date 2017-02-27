@@ -1,0 +1,66 @@
+*{
+  margin: 0;
+}
+
+body {
+  background: grey;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/*----- Nav Menu Styles -----*/
+
+nav {
+  background:  #333;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  display: block;
+  padding: 10px;
+}
+
+nav a:hover {
+  background-color:  #555;
+}
+
+/*----- Media Styles -----*/
+
+a.facebook {
+  background: url("img/facebook.png") no-repeat center;
+  background-size: 80%;
+}
+
+
+
+/*----- Nav Flex Styles -----*/
+
+
+@media screen and (min-width: 768px) {
+
+  nav ul {
+    display:flex;
+    justify-content: flex-start;
+  }
+
+  nav li {
+    flex: 1 1 0;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
