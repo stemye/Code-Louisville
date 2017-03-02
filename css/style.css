@@ -3,12 +3,13 @@
 }
 
 body {
-  background: grey;
+  //background: #0a2a5e;
+
 }
 
 .container {
   width: 100%;
-  max-width: 960px;
+  //max-width: 960px;
   margin: 0 auto;
 }
 
@@ -16,11 +17,12 @@ body {
 
 nav {
   background:  #333;
+  border-radius: 5px;
+  margin: 1px;
 }
 
 nav ul {
   list-style-type: none;
-  padding: 0;
 }
 
 nav a {
@@ -35,9 +37,33 @@ nav a:hover {
   background-color:  #555;
 }
 
+/*----- Nav parent ------*/
+
+.parent {
+  //background-color: blue;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.left {
+  //margin-left: 40px;
+  //margin-right: 10px;
+}
+
+.right {
+  //margin-left: 10px;
+  //margin-right: 40px;
+
+}
+
+
+
 /*----- Media Styles -----*/
 
-a.facebook {
+.facebook {
   background: url("img/facebook.png") no-repeat center;
   background-size: 80%;
 }
@@ -52,6 +78,7 @@ a.facebook {
   nav ul {
     display:flex;
     justify-content: flex-start;
+    align-self: flex-end;
   }
 
   nav li {
@@ -61,6 +88,10 @@ a.facebook {
   nav {
     display: flex;
     justify-content: space-between;
+  }
+
+  .parent {
+    flex-wrap: wrap;
   }
 
 }
