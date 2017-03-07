@@ -23,22 +23,42 @@ body {
 
 /*----- Nav Menu Styles -----*/
 
+.title {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.icon_container {
+  margin-right: 5px;
+}
+.icon {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px 0;
+}
+
 nav {
-  background:  #333;
-  border-radius: 5px;
-  margin: 1px;
+  display: none;
+  //background:  #333;
+  //border-radius: 5px;
+  //margin: 1px;
 }
 
 nav ul {
   list-style-type: none;
+  text-align: right;
 }
 
 nav a {
   text-decoration: none;
   text-align: center;
-  color: #fff;
-  display: block;
-  padding: 10px;
+  color: black;
+  //display: block;
+  //padding: 10px;
 }
 
 nav a:hover {
@@ -79,8 +99,23 @@ nav a:hover {
 
 /*----- Nav Flex Styles -----*/
 
+@media screen and (max-width: 768px) {
+  nav {
+    //display: none;
+  }
+
+  nav ul {
+    padding-right: 20px;
+  }
+
+}
+
 
 @media screen and (min-width: 768px) {
+
+  .icon {
+    display: none;
+  }
 
   .site_name {
     text-align: left;
@@ -97,8 +132,18 @@ nav a:hover {
   }
 
   nav {
+    background:  #333;
+    border-radius: 5px;
+    margin: 1px;
     display: flex;
     justify-content: space-between;
+  }
+
+  nav a {
+    color: #fff;
+    display: block;
+    padding: 10px;
+
   }
 
   .parent {
