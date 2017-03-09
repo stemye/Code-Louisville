@@ -1,11 +1,15 @@
 $("#dropdown").click(function(){
-    $("#menu").hide();
+    $(".menu").toggle("slow");
 });
 
-$("#dropdown").click(function(){
-    $("#menu").hide();
-});
+$(window).resize(function() {
+ if ($(window).width() > 768) {
+    $(".menu").show();
+    $("nav").css({"display": "flex"});
+ }
 
-function msg(){
- alert("Hello Javatpoint");
-}
+ if ($(window).width() < 768) {
+    $("nav").css({"display": "none"});
+ }
+
+});
