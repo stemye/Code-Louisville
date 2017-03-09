@@ -125,11 +125,10 @@ nav a:hover {
     display:flex;
     justify-content: flex-start;
     align-self: flex-end;
-    overflow: auto;
   }
 
   nav li {
-    flex: 1 1 0;
+    flex: 1 1 auto;
   }
 
   nav {
