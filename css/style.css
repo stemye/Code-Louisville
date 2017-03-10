@@ -3,7 +3,8 @@
 }
 
 body {
-  background: cornflowerblue;
+  background-image: url("../img/background.jpg");
+  //background: cornflowerblue;
 
 }
 
@@ -40,6 +41,7 @@ body {
 .icon_container {
   margin-right: 5px;
 }
+
 .icon {
   width: 25px;
   height: 3px;
@@ -73,8 +75,7 @@ nav a:hover {
 
 /*----- Nav parent ------*/
 
-.parent {
-  //background-color: blue;
+.body_content {
   display: flex;
   flex-direction: column;
   align-items: center;
