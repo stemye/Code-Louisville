@@ -2,6 +2,10 @@ $("#dropdown").click(function(){
     $(".menu").toggle("slow");
 });
 
+$(".menu").click(function(){
+  $(".menu").hide("slow");
+})
+
 $(window).resize(function() {
  if ($(window).width() > 768) {
     $(".menu").show();
