@@ -94,6 +94,21 @@ nav a:hover {
   margin: 10px;
 }
 
+/*---- Nav Downloads ----*/
+.downloads {
+  align-items: flex-start;
+
+}
+
+.downloads ul {
+  list-style-type: none;
+}
+
+.downloads a {
+  text-decoration: none;
+  color: black;
+
+}
 
 /*----- Media Styles -----*/
 
